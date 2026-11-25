@@ -1,0 +1,35 @@
+name: Report a problem or documentation issue
+description: Report incorrect behavior, examples, or explanations.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: affected
+    attributes:
+      label: Problem or file affected
+      placeholder: For example, Day 04 or Day4/findDuplicates.py
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What seems incorrect or unclear?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps or input to reproduce
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true

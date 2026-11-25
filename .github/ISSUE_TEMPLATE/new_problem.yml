@@ -1,0 +1,54 @@
+name: Suggest a problem
+description: Propose a programming challenge for the learning journey.
+title: "[Problem] "
+labels: ["problem suggestion"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Problem title
+      placeholder: A concise, descriptive title
+    validations:
+      required: true
+  - type: textarea
+    id: statement
+    attributes:
+      label: Problem statement
+      description: Describe the task without prescribing a solution.
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example inputs and outputs
+      placeholder: Include at least one example and explain its result.
+    validations:
+      required: true
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Suggested difficulty
+      options:
+        - Beginner
+        - Easy
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+  - type: input
+    id: topics
+    attributes:
+      label: Topics
+      description: For example, strings, lists, or hash maps.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and assumptions
+      description: Note any requirements that are known; mark unknown details clearly.
+  - type: textarea
+    id: tests
+    attributes:
+      label: Suggested test cases
+      description: Include edge cases or unusual inputs worth considering.
